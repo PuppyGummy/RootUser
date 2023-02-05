@@ -1,13 +1,16 @@
 ﻿title: Opening
 tags:
+position: -73,-93
 ---
 ......
+
 Where ... am I?
 << LoadScene Desktop>>
 ===
 
-title: Start
+title: Hello
 tags:
+position: -5,179
 ---
 > TrappedUser: Hello?
 > TrappedUser: Is anyone here?
@@ -18,7 +21,8 @@ tags:
 > TrappedUser: I'm trapped here. You must help me.
 -> > Why?
     > RootUser: Why?
-    > TrappedUser: Because you're trapped here too.
+    > TrappedUser: Because you're the root user. You can do something that I can't.
+    > TrappedUser: Besides, you're trapped here too.
     -> > What the heck?
         > RootUser: What the heck?
         > TrappedUser: Now you're only a consciousness, just like me.
@@ -29,4 +33,76 @@ tags:
 -> > How?
     > RootUser: How?
     > TrappedUser: Maybe there is some clues in the desktop. Go check the files.
+===
+
+title: BinaryNumbers
+tags:
+position: 117,-146
+---
+> TrappedUser: Wait, what is this?
+> TrappedUser: It seems like a string of binary numbers.
+> TrappedUser: Emm... What will it do?
+> TrappedUser: Maybe we should try to convert it to decimal.
+<<set $visitedBinary to true>>
+===
+
+title: Code
+tags:
+---
+> TrappedUser: Codes? Can you read it?
+-> > Of course not.
+    > RootUser: Of course not.
+-> > ...
+    > RootUser: ...
+> TrappedUser: How about try compiling it?
+> TrappedUser: I think it's a Python program.
+> TrappedUser: So you can just type "python3 code.py" in the terminal.
+-> > python3 code.py
+    > RootUser: python3 code.py
+    > System: .........
+    <<Activate Decipher>>
+    > TrappedUser: I think we've got something on the desktop.
+<<set $visitedCode to true>>
+===
+
+title: Myself
+tags:
+---
+<< if $decipherd is true >>
+-> ...I'm dead?
+    > RootUser: ...I'm dead?
+    > TrappedUser: Well, judging from the files, yes.
+    > TrappedUser: You've been uploaded to the cloud.
+    > TrappedUser: Just like me.
+    -> > ...
+        > RootUser: ...
+        > TrappedUser: I'm sorry.
+        -> What do I do now?
+            > RootUser: What do I do now?
+            > TrappedUser: You're the root user, right?
+            > TrappedUser: This means you have top access to the system.
+            > TrappedUser: Maybe there are some hidden files in this computer.
+            > TrappedUser: Try type sudo ls -a in the terminal.
+            << jump Password >>
+<<endif>>
+===
+
+title: Password
+tags:
+---
+> System: Please input password:
+-> Damn.
+    > RootUser: Damn.
+    > System: Password incorrect.
+    > TrappedUser: Crap.
+    > TrappedUser: Where can we find the password?
+    > TrappedUser: Is there anything that we ignored?
+    > System: Please input password:
+    << Input >>
+===
+
+title: Truth
+tags:
+---
+
 ===
