@@ -316,6 +316,8 @@ GameObject:
   - component: {fileID: 3183266951683364577}
   - component: {fileID: 3579681404684381410}
   - component: {fileID: 3831113772009270517}
+  - component: {fileID: 2753718019190875296}
+  - component: {fileID: 2753718019190875297}
   m_Layer: 0
   m_Name: Dialogue System
   m_TagString: Untagged
@@ -323,6 +325,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2753718019190875296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2753718019190875295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097b95c9f69f04f2d8c08a817e7786af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueView: {fileID: 7778558435483392182}
+  continueActionType: 1
+  continueActionKeyCode: 32
+--- !u!114 &2753718019190875297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2753718019190875295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ede15d1b53d9e45409131643dcad8cd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runner: {fileID: 3579681404684381410}
 --- !u!114 &2788043410039803536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,7 +549,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Here's a big long line of dialogue, ready to be shown to the player.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ca3150d5926a4594bcb220415d5260a, type: 2}
   m_sharedMaterial: {fileID: -7716392971400758493, guid: 4ca3150d5926a4594bcb220415d5260a, type: 2}
@@ -693,7 +723,7 @@ MonoBehaviour:
   fadeInTime: 0.25
   fadeOutTime: 0.05
   lineText: {fileID: 7778558434551657224}
-  showCharacterNameInLineView: 1
+  showCharacterNameInLineView: 0
   characterNameText: {fileID: 0}
   useTypewriterEffect: 1
   onCharacterTyped:

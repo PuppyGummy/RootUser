@@ -3,7 +3,7 @@ tags:
 ---
 ......
 Where ... am I?
-
+<< LoadScene Desktop>>
 ===
 
 title: Start
@@ -16,4 +16,17 @@ tags:
 -> > Who are you?
     > RootUser: Who are you?
 > TrappedUser: I'm trapped here. You must help me.
+-> > Why?
+    > RootUser: Why?
+    > TrappedUser: Because you're trapped here too.
+    -> > What the heck?
+        > RootUser: What the heck?
+        > TrappedUser: Now you're only a consciousness, just like me.
+        > TrappedUser: You need to find a way out.
+        -> > So what should I do?
+            > RootUser: So what should I do?
+            > TrappedUser: Maybe there is some clues in the desktop. Go check the files.
+-> > How?
+    > RootUser: How?
+    > TrappedUser: Maybe there is some clues in the desktop. Go check the files.
 ===
