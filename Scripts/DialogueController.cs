@@ -1,3 +1,4 @@
+using System;
 using System.Dynamic;
 using System.Collections;
 using System.Collections.Generic;
@@ -5,11 +6,12 @@ using UnityEngine;
 using Yarn.Unity;
 using DG.Tweening;
 using UnityEngine.UI;
+using TMPro;
 
 public class DialogueController : MonoBehaviour
 {
     public static DialogueController Instance { get; private set; }
-    public InputField inputField;
+    public TMP_InputField inputField;
     public GameObject decipher;
 
     private void Awake()
@@ -66,4 +68,5 @@ public class DialogueController : MonoBehaviour
     {
         inputField.gameObject.SetActive(true);
     }
+
 }

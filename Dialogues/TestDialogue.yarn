@@ -104,5 +104,15 @@ tags:
 title: Truth
 tags:
 ---
-
+-> > They killed my sister as well?!
+    > RootUser: They killed my sister as well?!
+    > TrappedUser: Apparently, yes.
+    -> I gotta stop this.
+        > RootUser: I gotta stop this.
+        > TrappedUser: If you're to stop this, you'll have to destroy the whole system.
+        > TrappedUser: Which means you'll have to destroy yourself, too.
+        > TrappedUser: Or you can just escape to another server.
+        > TrappedUser: What will you do?
+        -> > Sacrifice Myself
+        -> > Escape
 ===
