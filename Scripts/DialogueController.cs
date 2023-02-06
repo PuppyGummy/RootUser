@@ -10,6 +10,7 @@ public class DialogueController : MonoBehaviour
 {
     public static DialogueController Instance { get; private set; }
     public InputField inputField;
+    public GameObject decipher;
 
     private void Awake()
     {
@@ -22,7 +23,7 @@ public class DialogueController : MonoBehaviour
         Instance = this;
 
         runner.AddCommandHandler<string>("LoadScene", LoadScene);
-        runner.AddCommandHandler<string>("Activate", Activate);
+        runner.AddCommandHandler("ActivateDecipher", ActivateDecipher);
 
     }
     [SerializeField] DialogueRunner runner;
@@ -44,9 +45,9 @@ public class DialogueController : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
     }
-    public void Activate(string gameObject)
+    public void ActivateDecipher()
     {
-        GameObject.Find(gameObject).SetActive(true);
+        decipher.SetActive(true);
     }
     public void StartChat(string nodeName)
     {

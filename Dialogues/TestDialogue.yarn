@@ -60,7 +60,7 @@ tags:
 -> > python3 code.py
     > RootUser: python3 code.py
     > System: .........
-    <<Activate Decipher>>
+    <<ActivateDecipher>>
     > TrappedUser: I think we've got something on the desktop.
 <<set $visitedCode to true>>
 ===
