@@ -5,7 +5,7 @@ position: -73,-93
 ......
 
 Where ... am I?
-<< LoadScene Desktop>>
+<< LoadScene Desktop >>
 ===
 
 title: Hello
@@ -42,7 +42,7 @@ position: 117,-146
 > TrappedUser: Wait, what is this?
 > TrappedUser: It seems like a string of binary numbers.
 > TrappedUser: Emm... What will it do?
-> TrappedUser: Maybe we should try to convert it to decimal.
+> TrappedUser: Maybe we should try to convert it to decimal numbers.
 <<set $visitedBinary to true>>
 ===
 
@@ -56,13 +56,18 @@ tags:
     > RootUser: ...
 > TrappedUser: How about try compiling it?
 > TrappedUser: I think it's a Python program.
-> TrappedUser: So you can just type "python3 code.py" in the terminal.
--> > python3 code.py
-    > RootUser: python3 code.py
-    > System: .........
-    <<ActivateDecipher>>
-    > TrappedUser: I think we've got something on the desktop.
+> TrappedUser: So you can just type "python3 + filename" in the terminal.
+<< Input >>
 <<set $visitedCode to true>>
+===
+
+title: Compiled
+tags:
+---
+> RootUser: python3 code.py
+> System: .........
+<<ActivateDecipher>>
+> TrappedUser: I think we've got something on the desktop.
 ===
 
 title: Myself

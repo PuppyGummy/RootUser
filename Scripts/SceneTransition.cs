@@ -19,27 +19,29 @@ public class SceneTransition : MonoBehaviour
     }
     void Update()
     {
-        var animStateInfo = animator.GetCurrentAnimatorStateInfo (0);
+        var animStateInfo = animator.GetCurrentAnimatorStateInfo(0);
         var NTime = animStateInfo.normalizedTime;
- 
-        if(NTime > 1.0f){
-           animFinished = true;
-           OpenConsole();
+
+        if (NTime > 1.0f)
+        {
+            animFinished = true;
+            OpenConsole();
         }
-        
+
     }
     void OpenConsole()
     {
-            if(animFinished && aniSwitch){
+        if (animFinished && aniSwitch)
+        {
 
-                Debug.Log("Animation finished");
-                canvasGroup.DOFade(0, 5f).From(1).onStepComplete = () =>
-                {
-                    canvasGroup.gameObject.SetActive(false);
-                    DialogueController.Instance.StartChat("Hello");
-                };
-                animFinished = false;
-                aniSwitch = false;
-            }
+            Debug.Log("Animation finished");
+            canvasGroup.DOFade(0, 3f).From(1).onStepComplete = () =>
+            {
+                canvasGroup.gameObject.SetActive(false);
+                DialogueController.Instance.StartChat("Hello");
+            };
+            animFinished = false;
+            aniSwitch = false;
+        }
     }
 }

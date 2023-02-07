@@ -26,6 +26,7 @@ public class DialogueController : MonoBehaviour
 
         runner.AddCommandHandler<string>("LoadScene", LoadScene);
         runner.AddCommandHandler("ActivateDecipher", ActivateDecipher);
+        runner.AddCommandHandler("Input", Input);
 
     }
     [SerializeField] DialogueRunner runner;
@@ -68,5 +69,12 @@ public class DialogueController : MonoBehaviour
     {
         inputField.gameObject.SetActive(true);
     }
-
+    public void VerifyInput(string s)
+    {
+        if (s == "python3 Code.py" || s == "python code.py")
+        {
+            runner.StartDialogue("Compiled");
+            inputField.gameObject.SetActive(false);
+        }
+    }
 }
