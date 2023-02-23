@@ -206,72 +206,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1604434097
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1604434100}
-  - component: {fileID: 1604434099}
-  - component: {fileID: 1604434098}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1604434098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1604434097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &1604434099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1604434097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &1604434100
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1604434097}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &224084849591368196
 Transform:
   m_ObjectHideFlags: 0
@@ -352,7 +286,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ede15d1b53d9e45409131643dcad8cd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputField: {fileID: 0}
+  decipher: {fileID: 0}
+  myDocuments: {fileID: 0}
+  research: {fileID: 0}
+  record: {fileID: 0}
+  newsA: {fileID: 0}
+  newsB: {fileID: 0}
   runner: {fileID: 3579681404684381410}
+  consoleView: {fileID: 0}
+  variableStorage: {fileID: 0}
+  analogGlitch: {fileID: 0}
+  digitalGlitch: {fileID: 0}
+  logoLayer: {fileID: 0}
+  logoImage: {fileID: 0}
+  logo: {fileID: 0}
+  endLogo: {fileID: 0}
+  escape: {fileID: 0}
+  background: {fileID: 0}
+  desktop: {fileID: 0}
+  desktopEnd: {fileID: 0}
+  sceneTransition: {fileID: 0}
 --- !u!114 &2788043410039803536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,7 +338,7 @@ Transform:
   - {fileID: 7084386685605970667}
   - {fileID: 224084849591368196}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3579681404684381410
 MonoBehaviour:
@@ -551,8 +505,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4ca3150d5926a4594bcb220415d5260a, type: 2}
-  m_sharedMaterial: {fileID: -7716392971400758493, guid: 4ca3150d5926a4594bcb220415d5260a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d7fd195ddb94cbd4dbc91667accb8516, type: 2}
+  m_sharedMaterial: {fileID: 4393130314223613941, guid: d7fd195ddb94cbd4dbc91667accb8516, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

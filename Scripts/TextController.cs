@@ -8,18 +8,6 @@ public class TextController : MonoBehaviour
     public DialogueRunner dialogueRunner;
     public InMemoryVariableStorage variableStorage;
     public bool isCode = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void OnEnable()
     {
         bool visitedCode = false;

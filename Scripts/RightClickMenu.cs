@@ -2,26 +2,55 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class RightClickMenu : MonoBehaviour
 {
     public GameObject MenuPanel;
     public PointerEventData.InputButton clickMouseButton;
+    public TMP_InputField inputField;
+    public string password = "123abc";
+    private bool selected = false;
+    private Camera cam;
     // Start is called before the first frame update
     void Start()
     {
-        
+        cam = Camera.main;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonUp(1)){
-            MenuPanel.transform.position = Input.mousePosition;
+        if (Input.GetMouseButtonUp(1))
+        {
+            Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+            MenuPanel.transform.position = new Vector3(mousePos.x, mousePos.y, 0);
             MenuPanel.SetActive(true);
         }
-        if(Input.GetMouseButtonUp(0)){
+        if (Input.GetMouseButtonUp(0))
+        {
             MenuPanel.SetActive(false);
         }
+    }
+
+    public void Paste()
+    {
+        Debug.Log("selected: " + selected);
+        // if (selected)
+        {
+            inputField.text = password;
+        }
+    }
+
+    public void MarkSelected()
+    {
+        Debug.Log("Selected");
+        selected = true;
+    }
+
+    public void MarkUnselected()
+    {
+        Debug.Log("Unselected");
+        selected = false;
     }
 }

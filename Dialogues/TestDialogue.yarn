@@ -1,16 +1,13 @@
 ﻿title: Opening
 tags:
-position: -73,-93
 ---
 ......
-
 Where ... am I?
 << LoadScene Desktop >>
 ===
 
 title: Hello
 tags:
-position: -5,179
 ---
 > TrappedUser: Hello?
 > TrappedUser: Is anyone here?
@@ -29,7 +26,7 @@ position: -5,179
         > TrappedUser: You need to find a way out.
         -> > So what should I do?
             > RootUser: So what should I do?
-            > TrappedUser: Maybe there is some clues in the desktop. Go check the files.
+            > TrappedUser: Maybe there is some clues on the desktop. Go check the files.
 -> > How?
     > RootUser: How?
     > TrappedUser: Maybe there is some clues in the desktop. Go check the files.
@@ -37,7 +34,6 @@ position: -5,179
 
 title: BinaryNumbers
 tags:
-position: 117,-146
 ---
 > TrappedUser: Wait, what is this?
 > TrappedUser: It seems like a string of binary numbers.
@@ -58,13 +54,21 @@ tags:
 > TrappedUser: I think it's a Python program.
 > TrappedUser: So you can just type "python3 + filename" in the terminal.
 << Input >>
+<<set $currentNode to "Code">>
 <<set $visitedCode to true>>
+===
+
+title: CommandNotFound
+tags:
+---
+> System: Command not found.
+<< Input >>
 ===
 
 title: Compiled
 tags:
 ---
-> RootUser: python3 code.py
+> RootUser: python3 Code.py
 > System: .........
 <<ActivateDecipher>>
 > TrappedUser: I think we've got something on the desktop.
@@ -73,30 +77,29 @@ tags:
 title: Myself
 tags:
 ---
-<< if $decipherd is true >>
--> ...I'm dead?
-    > RootUser: ...I'm dead?
+<<set $currentNode to "Myself">>
+-> > I was converted to a digital life?
+    > RootUser: I was converted to a digital life?
     > TrappedUser: Well, judging from the files, yes.
     > TrappedUser: You've been uploaded to the cloud.
     > TrappedUser: Just like me.
     -> > ...
         > RootUser: ...
-        > TrappedUser: I'm sorry.
-        -> What do I do now?
+        -> > What do I do now?
             > RootUser: What do I do now?
             > TrappedUser: You're the root user, right?
             > TrappedUser: This means you have top access to the system.
             > TrappedUser: Maybe there are some hidden files in this computer.
             > TrappedUser: Try type sudo ls -a in the terminal.
-            << jump Password >>
-<<endif>>
+            << Input >>
 ===
 
 title: Password
 tags:
 ---
+<<set $currentNode to "Password">>
 > System: Please input password:
--> Damn.
+-> > Damn.
     > RootUser: Damn.
     > System: Password incorrect.
     > TrappedUser: Crap.
@@ -106,18 +109,52 @@ tags:
     << Input >>
 ===
 
+title: IncorrectPassword
+tags:
+---
+> System: Password incorrect.
+> System: Please input password:
+<< Input >>
+===
+
+title: CorrectPassword
+tags:
+---
+> System: Password correct.
+> System: Access granted.
+> TrappedUser: Looks like there's something new in My Documents.
+> TrappedUser: Let's check it out.
+===
+
 title: Truth
 tags:
 ---
--> > They killed my sister as well?!
-    > RootUser: They killed my sister as well?!
+-> > They killed me and my sister?!
+    > RootUser: They killed me and my sister?!
     > TrappedUser: Apparently, yes.
-    -> I gotta stop this.
+    > TrappedUser: I'm sorry.
+    -> > I gotta stop this.
         > RootUser: I gotta stop this.
         > TrappedUser: If you're to stop this, you'll have to destroy the whole system.
         > TrappedUser: Which means you'll have to destroy yourself, too.
         > TrappedUser: Or you can just escape to another server.
         > TrappedUser: What will you do?
         -> > Sacrifice Myself
+            <<Sacrifice>>
         -> > Escape
+            <<Escape>>
+===
+
+title: Sacrifice
+tags:
+---
+You decided to sacrifice yourself.
+Thank you for playing!
+===
+
+title: Escape
+tags:
+---
+You decided to escape.
+Thank you for playing!
 ===
