@@ -9,7 +9,7 @@ public class RightClickMenu : MonoBehaviour
     public GameObject MenuPanel;
     public PointerEventData.InputButton clickMouseButton;
     public TMP_InputField inputField;
-    public string password = "123abc";
+    public string password = "longlivenirvana";
     private bool selected = false;
     private Camera cam;
     // Start is called before the first frame update

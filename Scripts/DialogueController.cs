@@ -17,7 +17,8 @@ public class DialogueController : MonoBehaviour
     public InMemoryVariableStorage variableStorage;
     public AnalogGlitch analogGlitch;
     public DigitalGlitch digitalGlitch;
-    public GameObject logoLayer, logoImage, logo, endLogo, escape, background;
+    public GameObject logoImage, logo, endLogo, escape, background;
+    public CanvasGroup logoLayer;
     public Image desktop;
     public Sprite desktopEnd;
     public SceneTransition sceneTransition;
@@ -150,7 +151,8 @@ public class DialogueController : MonoBehaviour
         {
             window.gameObject.SetActive(false);
         }
-        logoLayer.SetActive(true);
+        logoLayer.gameObject.SetActive(true);
+        logoLayer.alpha = 1;
         logoImage.SetActive(false);
         background.SetActive(true);
         escape.SetActive(true);
@@ -189,7 +191,7 @@ public class DialogueController : MonoBehaviour
         }
         else if (currentNode == "Password")
         {
-            if (s == "123abc")
+            if (s == "longlivenirvana")
             {
                 research.SetActive(true);
                 record.SetActive(true);

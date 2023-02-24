@@ -52,7 +52,7 @@ tags:
     > RootUser: ...
 > TrappedUser: How about try compiling it?
 > TrappedUser: I think it's a Python program.
-> TrappedUser: So you can just type "python3 + filename" in the terminal.
+> TrappedUser: So you can just type "python3 filename" in the terminal.
 << Input >>
 <<set $currentNode to "Code">>
 <<set $visitedCode to true>>

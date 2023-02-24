@@ -901,6 +901,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragMouseButton: 0
   canvas: {fileID: 390118789}
+  miniObject: {fileID: 0}
 --- !u!114 &70361100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1197,6 +1198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragMouseButton: 0
   canvas: {fileID: 390118789}
+  miniObject: {fileID: 0}
 --- !u!114 &87604821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3873,6 +3875,7 @@ MonoBehaviour:
   desktopPic1: {fileID: 1413026615}
   decoder: {fileID: 1262581099}
   soundEffect: {fileID: 893642617}
+  hint: {fileID: 879447313}
 --- !u!4 &326532289
 Transform:
   m_ObjectHideFlags: 0
@@ -3881,7 +3884,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326532287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 404.415, y: 315.96063, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4152,7 +4155,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1893386352}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.9855038
+  m_Size: 0.95013624
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4511,7 +4514,7 @@ MonoBehaviour:
   MenuPanel: {fileID: 175901162}
   clickMouseButton: 1
   inputField: {fileID: 640833346}
-  password: 123abc
+  password: longlivenirvana
 --- !u!114 &368826775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4981,6 +4984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragMouseButton: 0
   canvas: {fileID: 390118789}
+  miniObject: {fileID: 0}
 --- !u!114 &384251336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5056,7 +5060,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 105.08313, y: -15}
-  m_SizeDelta: {x: 200.16626, y: 20}
+  m_SizeDelta: {x: 200.1662, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &385851756
 MonoBehaviour:
@@ -6063,6 +6067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragMouseButton: 0
   canvas: {fileID: 390118789}
+  miniObject: {fileID: 0}
 --- !u!114 &441326213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6225,7 +6230,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 407}
+  m_SizeDelta: {x: 0, y: 422.15}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &491807035
 GameObject:
@@ -6240,7 +6245,6 @@ GameObject:
   - component: {fileID: 491807039}
   - component: {fileID: 491807038}
   - component: {fileID: 491807037}
-  - component: {fileID: 491807042}
   m_Layer: 5
   m_Name: MyDocuments
   m_TagString: Untagged
@@ -6310,6 +6314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragMouseButton: 0
   canvas: {fileID: 390118789}
+  miniObject: {fileID: 0}
 --- !u!114 &491807039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6348,50 +6353,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491807035}
   m_CullTransparentMesh: 1
---- !u!114 &491807042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491807035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 491807039}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &493762003
 GameObject:
   m_ObjectHideFlags: 0
@@ -7812,7 +7773,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150.08313, y: -7}
+  m_AnchoredPosition: {x: 150.0831, y: -7}
   m_SizeDelta: {x: 100, y: 14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &599158065
@@ -9252,6 +9213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragMouseButton: 0
   canvas: {fileID: 390118789}
+  miniObject: {fileID: 0}
 --- !u!114 &752575228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12152,7 +12114,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 15, y: -285}
+  m_AnchoredPosition: {x: 15, y: -345}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &917745236
@@ -16808,6 +16770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragMouseButton: 0
   canvas: {fileID: 390118789}
+  miniObject: {fileID: 0}
 --- !u!114 &1323157508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17541,7 +17504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 15, y: -345}
+  m_AnchoredPosition: {x: 15, y: -405}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1413026617
@@ -17669,6 +17632,7 @@ MonoBehaviour:
   parentAfterDrag: {fileID: 0}
   tranformLayer: {fileID: 1175766435}
   icon: {fileID: 1413026618}
+  decoderWindow: {fileID: 1752995769}
 --- !u!50 &1413026623
 Rigidbody2D:
   serializedVersion: 4
@@ -18328,6 +18292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragMouseButton: 0
   canvas: {fileID: 390118789}
+  miniObject: {fileID: 0}
 --- !u!1 &1471368972
 GameObject:
   m_ObjectHideFlags: 0
@@ -19632,6 +19597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragMouseButton: 0
   canvas: {fileID: 390118789}
+  miniObject: {fileID: 0}
 --- !u!114 &1546029757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19871,6 +19837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragMouseButton: 0
   canvas: {fileID: 390118789}
+  miniObject: {fileID: 0}
 --- !u!114 &1587896257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19946,7 +19913,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 105.08313, y: -57.5}
-  m_SizeDelta: {x: 200.16626, y: 65}
+  m_SizeDelta: {x: 200.1662, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1596053054
 MonoBehaviour:
@@ -20472,6 +20439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragMouseButton: 0
   canvas: {fileID: 390118789}
+  miniObject: {fileID: 0}
 --- !u!114 &1617833781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20783,7 +20751,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -21137,12 +21105,12 @@ MonoBehaviour:
   variableStorage: {fileID: 1258335486}
   analogGlitch: {fileID: 876170764}
   digitalGlitch: {fileID: 876170765}
-  logoLayer: {fileID: 1953987254}
   logoImage: {fileID: 1052376203}
   logo: {fileID: 954878884}
   endLogo: {fileID: 1447063780}
   escape: {fileID: 589922508}
   background: {fileID: 665359304}
+  logoLayer: {fileID: 1953987259}
   desktop: {fileID: 1329101963}
   desktopEnd: {fileID: 21300000, guid: 8e609f83154b7478b83c85ddf55e1181, type: 3}
   sceneTransition: {fileID: 339695101}
@@ -21522,6 +21490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragMouseButton: 0
   canvas: {fileID: 390118789}
+  miniObject: {fileID: 0}
 --- !u!114 &1752995773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23075,7 +23044,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 195.49329, y: -30.429901}
+  m_AnchoredPosition: {x: 195.49329, y: -30.429932}
   m_SizeDelta: {x: 380.92346, y: 14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1875876971
@@ -23156,7 +23125,7 @@ RectTransform:
   m_Father: {fileID: 801757267}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.014496207}
+  m_AnchorMin: {x: 0, y: 0.049863756}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -23454,6 +23423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragMouseButton: 0
   canvas: {fileID: 390118789}
+  miniObject: {fileID: 0}
 --- !u!114 &1930122590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23645,7 +23615,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1953987255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23950,6 +23920,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1323157507}
         m_TargetAssemblyTypeName: WindowUI, Assembly-CSharp
         m_MethodName: OnOpen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 326532288}
+        m_TargetAssemblyTypeName: UnzipController, Assembly-CSharp
+        m_MethodName: ResetHint
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

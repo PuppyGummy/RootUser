@@ -11,6 +11,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
     public Image icon;
     private Transform upLayer;
     private Camera cam;
+    [SerializeField] GameObject decoderWindow;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -18,7 +19,10 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
         parentAfterDrag = transform.parent;
         transform.SetParent(transform.root);
         upLayer = tranformLayer.GetComponent<Transform>();
-        transform.SetParent(upLayer);
+        if (decoderWindow.activeSelf)
+        {
+            transform.SetParent(upLayer);
+        }
         transform.SetAsLastSibling();
         icon.raycastTarget = false;
     }
