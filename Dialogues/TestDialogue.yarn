@@ -1,0 +1,159 @@
+﻿title: Opening
+tags:
+---
+......
+Where ... am I?
+<< LoadScene Desktop >>
+===
+
+title: Hello
+tags:
+---
+> TrappedUser: Hello?
+> TrappedUser: Is anyone here?
+-> > Yes, I'm here.
+    > RootUser: Yes, I'm here.
+-> > Who are you?
+    > RootUser: Who are you?
+> TrappedUser: I'm trapped here. You must help me.
+-> > Why?
+    > RootUser: Why?
+    > TrappedUser: Because you're the root user. You can do something that I can't.
+    > TrappedUser: Besides, you're trapped here too.
+    -> > What the heck?
+        > RootUser: What the heck?
+        > TrappedUser: Now you're only a consciousness, just like me.
+        > TrappedUser: You need to find a way out.
+        -> > So what should I do?
+            > RootUser: So what should I do?
+            > TrappedUser: Maybe there is some clues on the desktop. Go check the files.
+-> > How?
+    > RootUser: How?
+    > TrappedUser: Maybe there is some clues in the desktop. Go check the files.
+===
+
+title: BinaryNumbers
+tags:
+---
+<<set $visitedBinary to true>>
+> TrappedUser: Wait, what did you just open?
+> TrappedUser: It seems like a string of binary numbers.
+> TrappedUser: Emm... What will it do?
+> TrappedUser: Maybe we should try to convert it to decimal numbers.
+===
+
+title: Code
+tags:
+---
+<<set $currentNode to "Code">>
+<<set $visitedCode to true>>
+> TrappedUser: Codes? Can you read it?
+-> > Of course not.
+    > RootUser: Of course not.
+-> > ...
+    > RootUser: ...
+> TrappedUser: How about try compiling it?
+> TrappedUser: I think it's a Python program.
+> TrappedUser: So you can just type "python3 filename" in the terminal.
+<< Input >>
+===
+
+title: CommandNotFound
+tags:
+---
+> System: Command not found.
+<< Input >>
+===
+
+title: Compiled
+tags:
+---
+> RootUser: python3 Code.py
+> System: .........
+<<ActivateDecipher>>
+> TrappedUser: I think we've got something on the desktop.
+===
+
+title: Myself
+tags:
+---
+<<set $currentNode to "Myself">>
+-> > I was converted to a digital life?
+    > RootUser: I was converted to a digital life?
+    > TrappedUser: Well, judging from the files, yes.
+    > TrappedUser: You've been uploaded to the cloud.
+    > TrappedUser: Just like me.
+    -> > ...
+        > RootUser: ...
+        -> > What do I do now?
+            > RootUser: What do I do now?
+            > TrappedUser: You're the root user, right?
+            > TrappedUser: This means you have top access to the system.
+            > TrappedUser: Maybe there are some hidden files in this computer.
+            > TrappedUser: Try typing sudo ls -a in the terminal.
+            << Input >>
+===
+
+title: Password
+tags:
+---
+<<set $currentNode to "Password">>
+> System: Please input password:
+-> > Damn.
+    > RootUser: Damn.
+    > System: Password incorrect.
+    > TrappedUser: Crap.
+    > TrappedUser: Where can we find the password?
+    > TrappedUser: Is there anything that we ignored?
+    > System: Please input password:
+    << Input >>
+===
+
+title: IncorrectPassword
+tags:
+---
+> System: Password incorrect.
+<< Input >>
+===
+
+title: CorrectPassword
+tags:
+---
+> System: Password correct.
+> System: Access granted.
+> TrappedUser: Looks like there's something new in My Documents.
+> TrappedUser: Let's check it out.
+===
+
+title: Truth
+tags:
+---
+-> > They killed me and my sister?!
+    > RootUser: They killed me and my sister?!
+    > TrappedUser: Apparently, yes.
+    > TrappedUser: I'm sorry.
+    -> > I gotta stop this.
+        > RootUser: I gotta stop this.
+        > TrappedUser: If you're to stop this, you'll have to destroy the whole system.
+        > TrappedUser: Which means you'll have to destroy yourself, too.
+        > TrappedUser: Or you can just escape to another server.
+        > TrappedUser: What will you do?
+        -> > Sacrifice Myself
+            <<Sacrifice>>
+        -> > Escape
+            <<Escape>>
+===
+
+title: Sacrifice
+tags:
+---
+You decided to sacrifice yourself.
+Thank you for playing!
+===
+
+title: Escape
+tags:
+---
+You decided to escape.
+Thank you for playing!
+===
